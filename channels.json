@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "channels": {
+    "macos-arm64": {
+      "endpoint": "https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-arm64-stable/latest-macos-arm64.json",
+      "platform": "macos",
+      "architecture": "arm64",
+      "releaseReady": true
+    },
+    "windows-x64": {
+      "endpoint": "https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-stable/latest-windows-x64.json",
+      "platform": "windows",
+      "architecture": "x86_64",
+      "releaseReady": false
+    }
+  }
+}
