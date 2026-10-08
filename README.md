@@ -10,7 +10,7 @@ Um estúdio para gravar tutoriais, aulas e apresentações com tela, webcam e á
 
 <a href="https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-arm64-v0.8.6/Dante-Studio-0.8.6-macOS-arm64.dmg"><img alt="Baixar grátis para Mac Apple Silicon — versão 0.8.6" height="48" src="https://img.shields.io/badge/BAIXAR_PARA_MAC-0.8.6-4158F5?style=for-the-badge&amp;logo=apple&amp;logoColor=white"></a>
 
-<a href="https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.8.4/Dante-Studio-0.8.4-Windows-x64-setup.exe"><img alt="Baixar grátis para Windows — versão 0.8.4" height="48" src="https://img.shields.io/badge/BAIXAR_PARA_WINDOWS-0.8.4-1676D2?style=for-the-badge"></a>
+<a href="https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.8.6/Dante-Studio-0.8.6-Windows-x64-setup.exe"><img alt="Baixar grátis para Windows — versão 0.8.6" height="48" src="https://img.shields.io/badge/BAIXAR_PARA_WINDOWS-0.8.6-1676D2?style=for-the-badge"></a>
 
 [Site oficial](https://dantetesta.com.br/dante-studio/) · [Todas as versões](https://github.com/dantetesta/DanteStudioUpdates/releases) · [Comunidade no WhatsApp](https://chat.whatsapp.com/IaXqPAlW1sNEALIoRktDrM?mode=gi_t)
 
@@ -35,7 +35,7 @@ Seus vídeos e projetos ficam no seu computador. Os recursos disponíveis variam
 | Sistema | Versão | Requisitos | Download |
 | --- | --- | --- | --- |
 | **Mac** | **0.8.6** | macOS 13 ou posterior · Apple Silicon (M1 ou posterior) | [Baixar DMG gratuito](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-arm64-v0.8.6/Dante-Studio-0.8.6-macOS-arm64.dmg) |
-| **Windows** | **0.8.4 — versão de teste** | Windows 10 versão 2004/build 19041 ou posterior · Windows 11 · x64 | [Baixar EXE gratuito](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.8.4/Dante-Studio-0.8.4-Windows-x64-setup.exe) |
+| **Windows** | **0.8.6 — versão de teste** | Windows 10 versão 2004/build 19041 ou posterior · Windows 11 · x64 | [Baixar EXE gratuito](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.8.6/Dante-Studio-0.8.6-Windows-x64-setup.exe) |
 
 **Mac:** abra o DMG e arraste o Dante Studio para Aplicativos. O instalador tem assinatura Developer ID e notarização Apple. Ao usar tela, câmera ou microfone, conceda as permissões solicitadas pelo macOS.
 
