@@ -12,6 +12,12 @@
       "platform": "windows",
       "architecture": "x86_64",
       "releaseReady": false
+    },
+    "macos-universal": {
+      "endpoint": "https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-stable/latest-macos-universal.json",
+      "platform": "macos",
+      "architecture": "universal",
+      "releaseReady": true
     }
   }
 }
