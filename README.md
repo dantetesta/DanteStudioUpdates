@@ -8,9 +8,9 @@
 
 Um estúdio para gravar tutoriais, aulas e apresentações com tela, webcam e áudio.
 
-<a href="https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.5/Dante-Studio-0.9.5-macOS-universal.dmg"><img alt="Baixar grátis para Mac Intel e Apple Silicon — versão 0.9.5" height="48" src="https://img.shields.io/badge/BAIXAR_PARA_MAC-0.9.5-4158F5?style=for-the-badge&amp;logo=apple&amp;logoColor=white"></a>
+<a href="https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.6/Dante-Studio-0.9.6-macOS-universal.dmg"><img alt="Baixar grátis para Mac Intel e Apple Silicon — versão 0.9.6" height="48" src="https://img.shields.io/badge/BAIXAR_PARA_MAC-0.9.6-4158F5?style=for-the-badge&amp;logo=apple&amp;logoColor=white"></a>
 
-<a href="https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.5/Dante-Studio-0.9.5-Windows-x64-setup.exe"><img alt="Baixar grátis para Windows — versão 0.9.5" height="48" src="https://img.shields.io/badge/BAIXAR_PARA_WINDOWS-0.9.5-1676D2?style=for-the-badge"></a>
+<a href="https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.6/Dante-Studio-0.9.6-Windows-x64-setup.exe"><img alt="Baixar grátis para Windows — versão 0.9.6" height="48" src="https://img.shields.io/badge/BAIXAR_PARA_WINDOWS-0.9.6-1676D2?style=for-the-badge"></a>
 
 [Site oficial](https://dantetesta.com.br/dante-studio/) · [Todas as versões](https://github.com/dantetesta/DanteStudioUpdates/releases) · [Comunidade no WhatsApp](https://chat.whatsapp.com/IaXqPAlW1sNEALIoRktDrM?mode=gi_t)
 
@@ -31,16 +31,15 @@ Um estúdio para gravar tutoriais, aulas e apresentações com tela, webcam e á
 
 Seus vídeos e projetos ficam no seu computador. Os recursos disponíveis variam entre Mac e Windows; anotações durante a captura e controles flutuantes estão disponíveis no Mac.
 
-## Novidades da versão 0.9.5
+## Novidades da versão 0.9.6
 
-- **Exportação sem sobra vazia final:** termina automaticamente no último conteúdo útil da montagem, inclusive em projetos antigos. Espaços interiores são preservados.
-- **Resumo de exportação:** duração original e editada separadas; tamanho estimado acompanha a edição. Tempo restante estimado pela taxa real de processamento, com nova animação.
-- **Somente webcam:** gravação horizontal16:9, vertical9:16 ou quadrada1:1, sem capturar a tela.
-- **Pastas padrão:** escolha o destino de gravações/exportações em qualquer unidade acessível e gravável; arquivos anteriores permanecem preservados.
-- **12 transições:** biblioteca para junções de takes da tela/webcam, com duração, substituição e remoção.
-- **Timeline:** movimentação exata da seleção, fechamento de espaços por trilha, zoom centralizado na agulha por botões/pinça/CmdCtrl+roda, régua subdividida e ondas de áudio mais visíveis.
-- **Atalhos e prévia:** desfazer/refazer e copiar/colar a seleção; player centralizado.
-- **Recursos no Mac:** até quatro trilhas, com camadas visuais e áudio independente ao reutilizar o mesmo vídeo simultaneamente; trilhas vazias mais compactas.
+- **Arraste a transição para a divisão:** aplique diretamente entre clipes vizinhos da tela ou câmera. Clicar na biblioteca apenas seleciona o efeito.
+- **Timeline mais limpa:** removidos os botões de + entre os clipes; os pontos de aplicação aparecem durante o arraste.
+- **Substituição e exclusão:** arraste outro efeito sobre a transição para substituir; selecione e use Delete/Backspace para remover, com desfazer.
+- **Biblioteca ilustrada:** 12 miniaturas criadas com imagens para exemplificar os efeitos.
+- **Transições em recursos — Mac:** entre imagens, GIFs e vídeos vizinhos na mesma trilha, com prévia/exportação e transições independentes por camada.
+- **Fade preto corrigido:** preserva a área ocupada pelo conteúdo, evitando revelar indevidamente a camada inferior.
+- **Windows:** configuração da janela ajustada para permitir o arraste dos efeitos dentro do editor.
 
 Música, títulos, recursos visuais importados, chroma key, áudio desses recursos, equalização do microfone e ferramentas de desenho estão disponíveis no Mac. A versão Windows mantém os recursos nativos descritos nos controles do aplicativo e continua como versão de teste. Ambos os instaladores têm a mesma versão; suas capacidades nativas ainda diferem. Os arquivos e projetos ficam no computador, com edição não destrutiva.
 
@@ -48,8 +47,8 @@ Música, títulos, recursos visuais importados, chroma key, áudio desses recurs
 
 | Sistema | Versão | Requisitos | Download |
 | --- | --- | --- | --- |
-| **Mac** | **0.9.5** | macOS 13 ou posterior · Intel e Apple Silicon | [Baixar DMG gratuito](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.5/Dante-Studio-0.9.5-macOS-universal.dmg) |
-| **Windows** | **0.9.5 — versão de teste** | Windows 10 versão 2004/build 19041 ou posterior · Windows 11 · x64 | [Baixar EXE gratuito](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.5/Dante-Studio-0.9.5-Windows-x64-setup.exe) |
+| **Mac** | **0.9.6** | macOS 13 ou posterior · Intel e Apple Silicon | [Baixar DMG gratuito](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.6/Dante-Studio-0.9.6-macOS-universal.dmg) |
+| **Windows** | **0.9.6 — versão de teste** | Windows 10 versão 2004/build 19041 ou posterior · Windows 11 · x64 | [Baixar EXE gratuito](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.6/Dante-Studio-0.9.6-Windows-x64-setup.exe) |
 
 **Mac:** abra o DMG e arraste o Dante Studio para Aplicativos. O instalador tem assinatura Developer ID e notarização Apple. Ao usar tela, câmera ou microfone, conceda as permissões solicitadas pelo macOS.
 
@@ -61,7 +60,7 @@ Os arquivos `.sha256` para conferência estão nas [releases](https://github.com
 
 ### Atualizações
 
-No **Mac**, abra **Atualizações** para consultar o repositório oficial. As versões Apple Silicon anteriores recebem a 0.9.0 por um pacote de transição; as próximas atualizações usam o canal universal. Se sua versão ainda aponta para o endereço antigo, instale o DMG 0.9.5 manualmente uma vez. A detecção e os pacotes assinados são verificados; a instalação automática completa no aplicativo instalado ainda precisa de teste do usuário.
+No **Mac**, abra **Atualizações** para consultar o repositório oficial. As versões Apple Silicon anteriores recebem a 0.9.0 por um pacote de transição; as próximas atualizações usam o canal universal. Se sua versão ainda aponta para o endereço antigo, instale o DMG 0.9.6 manualmente uma vez. A detecção e os pacotes assinados são verificados; a instalação automática completa no aplicativo instalado ainda precisa de teste do usuário.
 
 No **Windows**, as atualizações são instaladas manualmente pelo EXE. O auto-update dessa plataforma ainda não está disponível.
 
