@@ -1,22 +1,21 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão **0.9.13**.
+Gravador e editor de tutoriais gratuito. Versão **0.9.15**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.13/Dante-Studio-0.9.13-macOS-universal.dmg): assinado e notarizado.
-- [Windows x64 de teste](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.13/Dante-Studio-0.9.13-Windows-x64-setup.exe): instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.15/Dante-Studio-0.9.15-macOS-universal.dmg): assinado e notarizado.
+- [Windows x64 de teste](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.15/Dante-Studio-0.9.15-Windows-x64-setup.exe): instalação e atualização manual.
 
-## Novidades desde a 0.9.12
+## Novidades desde a 0.9.13
 
-- **Mac:** mover, redimensionar e recortar a captura de tela por take, preservando o original.
-- **Mac:** propriedades ao selecionar, arraste da biblioteca para a timeline e grade automática ou 2/3/4 colunas.
-- **Mac:** 432 emojis em sete categorias, com busca em português.
-- Timeline mais compacta e campos sem contornos grossos.
-- Só webcam com câmera central e transporte após iniciar a gravação.
-- Capas de webcam a partir de 3s e exportações a partir de 5s, com tentativa de evitar quadros pretos.
-- **Configurar YouTube** em Exportações: JSON OAuth Desktop do próprio projeto Google e manual. Credenciais/tokens no cofre do sistema; cada usuário autoriza sua própria conta. Testes isolados concluídos; login e envio real ainda precisam de validação com uma conta Google. Não há promessa de quantidade fixa de vídeos, monetização via API ou aprovação de projetos; quotas e restrições do Google se aplicam.
-- Créditos com avatar, versão e Pix de apoio voluntário, com exibir/copiar.
+- **Versão correta no rodapé:** o número acompanha automaticamente a versão do aplicativo. Corrige o rótulo 0.9.12 que aparecia por engano na 0.9.13.
+- **Capa para o YouTube:** recorte 16:9, arraste, zoom e centralização; otimização automática para JPEG 1280 × 720 antes do envio.
+- **Progresso em destaque:** ao enviar, o formulário dá lugar à porcentagem, dados transferidos, etapas e cancelamento.
+- **Selo Enviado ao YouTube:** identifica cada exportação após confirmação do recebimento pelo YouTube e persiste ao reiniciar. Indica envio, não publicação pública. Envios anteriores sem registro não são recuperados retroativamente.
+- **Manual ilustrado:** 13 passos para configurar credenciais OAuth Desktop e conectar o próprio canal.
+
+A integração usa autorização individual e cofre do sistema. Quotas, permissões e restrições do Google se aplicam. Monetização e verificações adicionais continuam no YouTube Studio. Os novos fluxos foram validados com testes isolados; não houve novo envio real durante a validação desta versão.
 
 ## Plataformas e limites
 
