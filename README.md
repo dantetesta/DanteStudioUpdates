@@ -1,21 +1,24 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito, com processamento local. Versão **0.9.10**.
+Gravador e editor de tutoriais gratuito, com processamento local. Versão **0.9.11**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.10/Dante-Studio-0.9.10-macOS-universal.dmg): assinado e notarizado.
-- [Windows x64 de teste — Windows 10 build 19041+ e Windows 11](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.10/Dante-Studio-0.9.10-Windows-x64-setup.exe): instalação e atualização manual por EXE.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.11/Dante-Studio-0.9.11-macOS-universal.dmg): assinado e notarizado.
+- [Windows x64 de teste — Windows 10 build 19041+ e Windows 11](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.11/Dante-Studio-0.9.11-Windows-x64-setup.exe): instalação e atualização manual por EXE.
 
-## Novidades desde a 0.9.7
+## Novidades desde a 0.9.10
 
-- Editor reorganizado: biblioteca à esquerda, player ao centro, propriedades à direita e timeline em toda a largura, com régua fixa durante a rolagem das trilhas.
-- Barra superior compacta, painéis recolhíveis e propriedades mais claras para a seleção. Gravações tem identificação por texto; no Mac, Atualizações fecha ao clicar fora; o clique direito deixa de exibir Reload.
-- Transições arrastadas com indicador pequeno e seleção ampliada. Arraste outra para substituir; Delete remove e Desfazer restaura. Prévia prepara os dois lados e aplica o efeito na camada escolhida.
-- **Mac:** formas, setas desenhadas entre dois pontos, emojis e importação de SVG estático. Posição, tamanho e rotação; cor editável em formas/SVG, mantendo a transparência.
-- **Mac:** biblioteca reutilizável entre projetos para imagens, GIFs, vídeos, áudio e gráficos. Busca, filtros, capas e escuta de áudio. Cada projeto recebe sua própria cópia; remover da biblioteca preserva as cópias já usadas e os originais.
-- **Mac:** preparação cancelável de vídeos leves compatíveis e de até cinco segundos da transição selecionada. Originais preservados, cache limitado e exportação com a mídia original.
-- Navegação rápida mantém o destino mais recente de busca do vídeo; diagnóstico opcional local, sem telemetria.
+- **Mac:** Biblioteca de mídia centraliza imagens, vídeos e áudios, com filtros por tipo. Música passa a ser importada pela biblioteca, mantendo sua trilha e ajustes.
+- **Mac:** Biblioteca global por padrão; importar não altera a timeline. Formas e emojis ficam em Gráficos; SVGs importados continuam reutilizáveis ali.
+- Biblioteca esquerda redimensionável. **Mac:** recursos simultâneos em até quatro camadas e arraste entre faixas.
+- Clique direito para remover transições. Indicadores clicáveis nos takes com volume/mute ou enquadramento próprios.
+- **Mac:** Grade de nove posições para mídias e gráficos. Rotação fora das bordas e redimensionamento pelos quadradinhos.
+- Só webcam com prévia antes de gravar e monitor durante gravação/pausa. **Mac:** nova contagem compacta: 3, 2, 1, Gravando.
+- Capas de gravações e exportações aos 30 segundos, ou no meio de vídeos curtos. Exportações em grade compacta; seletores padronizados.
+- **Mac:** Atualização silenciosa ao iniciar, aviso no topo só quando disponível e verificação manual pelo menu do aplicativo. Modal maior com changelog.
+
+YouTube permanece desabilitado nesta versão. O Manual está disponível; conexão e envio real ainda não foram liberados.
 
 ## Plataformas e limites
 
