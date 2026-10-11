@@ -1,22 +1,20 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito, com processamento local. Versão **0.9.11**.
+Gravador e editor de tutoriais gratuito, com processamento local. Versão **0.9.12**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.11/Dante-Studio-0.9.11-macOS-universal.dmg): assinado e notarizado.
-- [Windows x64 de teste — Windows 10 build 19041+ e Windows 11](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.11/Dante-Studio-0.9.11-Windows-x64-setup.exe): instalação e atualização manual por EXE.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.12/Dante-Studio-0.9.12-macOS-universal.dmg): assinado e notarizado.
+- [Windows x64 de teste — Windows 10 build 19041+ e Windows 11](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.12/Dante-Studio-0.9.12-Windows-x64-setup.exe): instalação e atualização manual por EXE.
 
-## Novidades desde a 0.9.10
+## Novidades desde a 0.9.11
 
-- **Mac:** Biblioteca de mídia centraliza imagens, vídeos e áudios, com filtros por tipo. Música passa a ser importada pela biblioteca, mantendo sua trilha e ajustes.
-- **Mac:** Biblioteca global por padrão; importar não altera a timeline. Formas e emojis ficam em Gráficos; SVGs importados continuam reutilizáveis ali.
-- Biblioteca esquerda redimensionável. **Mac:** recursos simultâneos em até quatro camadas e arraste entre faixas.
-- Clique direito para remover transições. Indicadores clicáveis nos takes com volume/mute ou enquadramento próprios.
-- **Mac:** Grade de nove posições para mídias e gráficos. Rotação fora das bordas e redimensionamento pelos quadradinhos.
-- Só webcam com prévia antes de gravar e monitor durante gravação/pausa. **Mac:** nova contagem compacta: 3, 2, 1, Gravando.
-- Capas de gravações e exportações aos 30 segundos, ou no meio de vídeos curtos. Exportações em grade compacta; seletores padronizados.
-- **Mac:** Atualização silenciosa ao iniciar, aviso no topo só quando disponível e verificação manual pelo menu do aplicativo. Modal maior com changelog.
+- Gravador em três colunas de mesma largura, com disposição responsiva para janelas menores.
+- Biblioteca lateral com largura inicial maior e ajuste manual preservado.
+- **Mac:** Trilha de recursos renomeada para **Mídia**; áudios seguem na trilha Música.
+- **Mac:** Corrigido o erro de biblioteca ocupada durante importação ou preparação de prévia. A leitura aguarda a operação e atualiza a lista.
+- Ao terminar a exportação, o pop-up mantém **100% concluído** com **Mostrar na pasta**, **Ver exportações** e **Voltar ao editor**.
+- Removidos o aviso persistente abaixo do player e as notificações duplicadas de sucesso.
 
 YouTube permanece desabilitado nesta versão. O Manual está disponível; conexão e envio real ainda não foram liberados.
 
