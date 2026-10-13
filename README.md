@@ -1,28 +1,34 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão **0.9.15**.
+Gravador e editor de tutoriais gratuito. Versão **0.9.17**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.15/Dante-Studio-0.9.15-macOS-universal.dmg): assinado e notarizado.
-- [Windows x64 de teste](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.15/Dante-Studio-0.9.15-Windows-x64-setup.exe): instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.17/Dante-Studio-0.9.17-macOS-universal.dmg): assinado e notarizado.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.17/Dante-Studio-0.9.17-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades desde a 0.9.13
+## Novidades
 
-- **Versão correta no rodapé:** o número acompanha automaticamente a versão do aplicativo. Corrige o rótulo 0.9.12 que aparecia por engano na 0.9.13.
-- **Capa para o YouTube:** recorte 16:9, arraste, zoom e centralização; otimização automática para JPEG 1280 × 720 antes do envio.
-- **Progresso em destaque:** ao enviar, o formulário dá lugar à porcentagem, dados transferidos, etapas e cancelamento.
-- **Selo Enviado ao YouTube:** identifica cada exportação após confirmação do recebimento pelo YouTube e persiste ao reiniciar. Indica envio, não publicação pública. Envios anteriores sem registro não são recuperados retroativamente.
-- **Manual ilustrado:** 13 passos para configurar credenciais OAuth Desktop e conectar o próprio canal.
+- **Projetos do zero:** abra o Editor, escolha uma gravação ou comece um projeto vazio com os recursos da biblioteca de mídia.
+- **MKV do OBS:** importação de vídeo H.264 SDR com seleção de até duas trilhas de áudio para o projeto. Para usar como recurso na biblioteca, escolha uma faixa de áudio. AAC, Opus, FLAC e PCM compatíveis são preparados quando necessário; os originais são preservados.
+- **Biblioteca nos dois sistemas:** imagens, GIFs, vídeos, músicas, títulos e gráficos para compor a edição. Áudio dos recursos é opcional.
+- **Aulas e lives longas:** duração de até 24 horas, condicionada ao espaço e ao computador. A importação trabalha por partes; a exportação de música aplica volume e fades sem criar um PCM temporário integral de várias horas.
+- **Windows:** composição de recursos, música, títulos, gráficos, chroma e enquadramento por take no motor nativo. Corrigido o fundo da câmera em tela cheia quando o vídeo termina.
 
-A integração usa autorização individual e cofre do sistema. Quotas, permissões e restrições do Google se aplicam. Monetização e verificações adicionais continuam no YouTube Studio. Os novos fluxos foram validados com testes isolados; não houve novo envio real durante a validação desta versão.
+## Atualização no Mac
 
-## Plataformas e limites
+Quem usa o atualizador antigo receberá primeiro a **0.9.16**, que prepara a instalação dos novos componentes de mídia. Depois de reiniciar, verifique as atualizações novamente para receber a **0.9.17**. O DMG acima permite instalar diretamente a versão final. O canal ARM legado permanece na ponte 0.9.0.
 
-**Mac:** universal para Apple Silicon e Intel, com atualização assinada. O canal ARM legado permanece na 0.9.0 como ponte. Vídeos sem metadados completos de cor, HDR, transparentes ou incompatíveis continuam usando o original na prévia. Composição e recorte da tela por take são exclusivos do Mac. SVG aceito é estático e convertido em imagem: scripts, animações, texto/fontes, filtros, imagens e referências externas não são suportados; não há edição por nós vetoriais.
+## Compatibilidade
 
-**Windows:** captura/exportação nativas, versão de teste e atualização manual. Sem certificado Authenticode Dante Studio e sem atualização automática. Recursos visuais importados e suas transições, gráficos/SVG/biblioteca, música, títulos, chroma key, áudio dos recursos, equalização, limpeza de voz, prévias preparadas e desenhos nativos continuam indisponíveis. A mesma versão não significa paridade de funcionalidades.
+MKV é um contêiner; outros codecs, HDR e formatos de áudio fora da lista podem exigir conversão prévia. Recursos como proxies de prévia, transições preparadas, HEVC e processamento avançado de voz continuam específicos do Mac. Fontes e emojis podem variar entre os sistemas. SVG é estático, sanitizado e rasterizado, sem scripts ou referências externas.
 
-Testes automatizados e mídia sintética verificam contratos, edição e exportação. Não equivalem a captura física, audição, sincronismo labial observado ou uso prolongado em todo hardware. Esta versão não adiciona remoção neural de ruído nem promete zero quadros perdidos. O diagnóstico de prévia não mede perdas durante a captura. A descoberta de uma atualização não comprova a substituição instalada completa.
+No Windows e no macOS 14+, gravações fragmentadas reduzem o risco de perda após interrupções. A recuperação preserva os originais e depende dos fragmentos efetivamente gravados; não substitui backup. A finalização Windows verifica as trilhas para preservar também a cauda do áudio.
 
-Software gratuito. Fontes de desenvolvimento mantidas em repositório privado. Instaladores incluem somente runtime e metadados necessários; materiais de divulgação ficam separados.
+O instalador Windows ainda não possui certificado Authenticode próprio e não oferece atualização automática. Os testes automatizados usam mídia sintética e Windows Server; não equivalem a captura física, audição ou teste prolongado em todo hardware. Não há promessa de ausência de perda em falhas ou de desempenho idêntico entre computadores.
+
+## Software e licenças
+
+Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
+
+A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.17/Dante-Studio-0.9.17-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
