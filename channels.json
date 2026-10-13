@@ -14,10 +14,12 @@
       "releaseReady": false
     },
     "macos-universal": {
-      "endpoint": "https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-stable/latest-macos-universal.json",
+      "endpoint": "https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-stable-v2/latest-macos-universal.json",
       "platform": "macos",
       "architecture": "universal",
-      "releaseReady": true
+      "releaseReady": true,
+      "legacyEndpoint": "https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-stable/latest-macos-universal.json",
+      "legacyBridgeVersion": "0.9.16"
     }
   }
 }
