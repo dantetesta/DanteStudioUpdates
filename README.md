@@ -1,26 +1,28 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão **0.9.18**.
+Gravador e editor de tutoriais gratuito. Versão **0.9.19**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.18/Dante-Studio-0.9.18-macOS-universal.dmg): assinado e notarizado.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.18/Dante-Studio-0.9.18-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.19/Dante-Studio-0.9.19-macOS-universal.dmg): assinado e notarizado.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.19/Dante-Studio-0.9.19-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.18
+## Novidades da 0.9.19
 
-- **Importação unificada:** use Imagem e vídeo na Biblioteca de mídia para escolher imagens, GIFs e vídeos compatíveis, incluindo MKV do OBS. O botão exclusivo de MKV foi removido.
-- **Preparação automática:** sem seleção manual de trilhas. A janela mostra arquivo, duração, tamanho, progresso e cancelamento quando necessário.
-- **Duração completa:** novos vídeos entram inteiros na timeline, corrigindo o limite inicial de três segundos. Trechos antigos podem ser estendidos até o fim da fonte, respeitando vizinhos e o teto de 24 horas.
-- **Áudio vinculado:** novos clipes com áudio começam com o som ligado. A faixa Áudio da Mídia acompanha a posição e os cortes do mesmo vídeo, com volume e silêncio por trecho, sem duplicar a reprodução.
-- **Várias faixas preservadas:** recursos MKV mantêm os áudios compatíveis no arquivo e reproduzem a faixa principal, sem somar mixes do OBS. Não há edição independente de cada faixa embutida nesta versão. Para arquivos com mais de duas faixas, use a Biblioteca de mídia em vez de importar como projeto.
-- **Projetos preservados:** cortes, volume e silenciamento já salvos continuam como estavam; os originais não são alterados.
+- **Exportação de MKV corrigida:** metadados de duração reconciliados com o arquivo preparado, incluindo projetos iniciados do zero e montados com a Biblioteca de mídia.
+- **Nome do projeto:** use o lápis no editor para personalizar o nome exibido na biblioteca.
+- **Encaixe preciso:** clipes muito próximos se unem sem pequenos vãos, respeitando o botão Encaixe magnético e os espaços intencionais.
+- **Prévia coordenada:** vídeos da biblioteca seguem o relógio central do editor para melhorar o sincronismo durante a edição.
+- **Chroma key refinado:** controle opcional de neutralização da cor nas bordas, com propriedades reorganizadas.
+- **Atalhos visíveis:** tooltips mostram os atalhos disponíveis conforme a plataforma.
+
+Continuam disponíveis a importação unificada de MKV, a duração completa e o áudio vinculado introduzidos na 0.9.18. Recursos MKV preservam áudios compatíveis e reproduzem a faixa principal; não há edição independente de todas as faixas embutidas. Projetos e cortes já salvos são preservados.
 
 Projetos do zero, imagens/GIFs/vídeos, música, títulos, gráficos e aulas de até 24 horas continuam disponíveis, conforme a compatibilidade de cada plataforma.
 
 ## Atualização no Mac
 
-Quem usa o atualizador antigo receberá primeiro a **0.9.16**, que prepara a instalação dos novos componentes de mídia. Depois de reiniciar, verifique as atualizações novamente para receber a **0.9.18**. O DMG acima permite instalar diretamente a versão final. O canal ARM legado permanece na ponte 0.9.0.
+Quem usa o atualizador antigo receberá primeiro a **0.9.16**, que prepara a instalação dos novos componentes de mídia. Depois de reiniciar, verifique as atualizações novamente para receber a **0.9.19**. O DMG acima permite instalar diretamente a versão final. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -34,4 +36,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.18/Dante-Studio-0.9.18-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
+A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.19/Dante-Studio-0.9.19-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
