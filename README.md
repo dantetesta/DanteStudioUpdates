@@ -1,42 +1,29 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versões atuais: **Windows 0.9.23** e **Mac 0.9.22**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.25 para Mac e Windows**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.22/Dante-Studio-0.9.22-macOS-universal.dmg): assinado e notarizado.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.23/Dante-Studio-0.9.23-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.25/Dante-Studio-0.9.25-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.25/Dante-Studio-0.9.25-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades do Windows 0.9.23
+## Novidades da 0.9.25
 
-- **Área livre em qualquer monitor:** comece a seleção na tela desejada, sem precisar escolhê-la antes na lista. A área permanece dentro do monitor em que o arraste começou.
-- **Janela destacada antes do clique:** passar o mouse mostra a janela detectada; um clique confirma a escolha.
-- **Monitor correto após selecionar:** a interface identifica a tela escolhida e respeita suas coordenadas. Tela inteira continua usando o monitor selecionado na lista.
-- **Cancelamento consistente:** Esc, Cancelar ou mudanças nos monitores encerram a seleção e removem suas camadas visuais.
+- **Timeline que acompanha a edição:** a reprodução termina no último conteúdo e a área visível acompanha a agulha perto da borda.
+- **Encaixe controlável:** snap curto entre bordas, inclusive em outras trilhas, com Posicionamento livre no menu de cada take/recurso.
+- **Montagem mais prática:** camadas extras vazias são removidas. Reordene, recorte, copie e cole takes com desfazer. Com Fechar espaços ativo, colagens mistas abrem espaço apenas nas trilhas envolvidas.
+- **Novos movimentos de zoom:** Aproximar, Afastar e Aproximar e voltar; os dois pontos centrais compartilham o enquadramento. Duplique pontos conservando posição e escala.
+- **Chroma com ajuste de reflexos:** alcance opcional da neutralização da cor de fundo em áreas opacas, preservando a aparência de projetos anteriores. Cores legítimas semelhantes ao fundo podem perder saturação; ajuste conforme o conteúdo.
+- **Correções de prévia e interface:** carregamento de transições sem o SecurityError relatado, contador do gravador ocioso zerado e prévia do halo Windows coerente com o desenho gravado.
+- **Mac atualizado:** inclui as correções de timestamps/finalização e orientação de permissões posteriores à 0.9.22. A notarização da Apple foi concluída.
 
-O Mac 0.9.23 está preparado, mas aguarda liberação da notarização pela Apple. O download e o canal de atualização Mac permanecem na versão 0.9.22.
+Continuam disponíveis seleção de área livre em qualquer monitor e destaque da janela antes de confirmar, importação unificada de MKV, áudio vinculado, projetos do zero, títulos, gráficos e as 15 fontes de títulos. Recursos MKV preservam faixas compatíveis e reproduzem a principal; não há edição independente de todas as faixas embutidas.
 
-A seleção foi testada em Windows Server 2022 e 2025 com sete superfícies simuladas, incluindo destaque, clique e cancelamento. Isso não equivale a testar sete monitores físicos ou todas as combinações de DPI e hardware.
-
-## Novidades anteriores da 0.9.22
-
-- **Parada com estado correto no Windows:** falhas de captura congelam o cronômetro e iniciam a finalização com aviso, sem apresentar uma captura interrompida como ainda ativa.
-- **Finalização com opção de cancelar:** a preparação dos arquivos pode ser cancelada para preservar os originais e tentar a recuperação pela biblioteca. Uma verificação em andamento pode demorar a responder.
-- **Recuperação mais consistente:** sessões cuja finalização falhou continuam identificadas como interrompidas. Faixas opcionais vazias deixam de bloquear o vídeo, mantendo a validação dos demais arquivos.
-- **Áudio e processos auxiliares:** criação da faixa somente quando há amostras, liberação dos buffers antes da codificação e encerramento dos conversores junto ao aplicativo.
-- **Instalação Windows protegida:** verificação dos conversores em uso antes de substituir arquivos, com nova tentativa após liberar o bloqueio.
-
-O Mac recebe a versão 0.9.22 com sua captura nativa preservada. As correções acima são específicas do Windows.
-
-A versão mantém as **15 fontes para títulos**, com nove famílias incorporadas para uso offline, a preparação do próximo clipe na prévia e a correção do limite final da exportação no Mac, entregues na 0.9.20.
-
-Continuam disponíveis a importação unificada de MKV, a duração completa e o áudio vinculado introduzidos na 0.9.18. Recursos MKV preservam áudios compatíveis e reproduzem a faixa principal; não há edição independente de todas as faixas embutidas. Projetos e cortes já salvos são preservados.
-
-Projetos do zero, imagens/GIFs/vídeos, música, títulos, gráficos e aulas de até 24 horas continuam disponíveis, conforme a compatibilidade de cada plataforma.
+Barra flutuante, desenho e lupa continuam disponíveis somente no Mac. Gravação simultânea de vários monitores em mosaico ainda não foi implementada. A mesma versão não significa paridade de todos os recursos nativos.
 
 ## Atualização no Mac
 
-Quem usa o atualizador antigo receberá primeiro a **0.9.16**, que prepara a instalação dos novos componentes de mídia. Depois de reiniciar, verifique as atualizações novamente para receber a **0.9.22**. O DMG acima permite instalar diretamente a versão final. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.25**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -50,4 +37,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.22/Dante-Studio-0.9.22-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
+A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.25/Dante-Studio-0.9.25-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
