@@ -1,21 +1,21 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.25 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.26 para Mac e Windows**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.25/Dante-Studio-0.9.25-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.25/Dante-Studio-0.9.25-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.26/Dante-Studio-0.9.26-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.26/Dante-Studio-0.9.26-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.25
+## Novidades da 0.9.26
 
-- **Timeline que acompanha a edição:** a reprodução termina no último conteúdo e a área visível acompanha a agulha perto da borda.
-- **Encaixe controlável:** snap curto entre bordas, inclusive em outras trilhas, com Posicionamento livre no menu de cada take/recurso.
-- **Montagem mais prática:** camadas extras vazias são removidas. Reordene, recorte, copie e cole takes com desfazer. Com Fechar espaços ativo, colagens mistas abrem espaço apenas nas trilhas envolvidas.
-- **Novos movimentos de zoom:** Aproximar, Afastar e Aproximar e voltar; os dois pontos centrais compartilham o enquadramento. Duplique pontos conservando posição e escala.
-- **Chroma com ajuste de reflexos:** alcance opcional da neutralização da cor de fundo em áreas opacas, preservando a aparência de projetos anteriores. Cores legítimas semelhantes ao fundo podem perder saturação; ajuste conforme o conteúdo.
-- **Correções de prévia e interface:** carregamento de transições sem o SecurityError relatado, contador do gravador ocioso zerado e prévia do halo Windows coerente com o desenho gravado.
-- **Mac atualizado:** inclui as correções de timestamps/finalização e orientação de permissões posteriores à 0.9.22. A notarização da Apple foi concluída.
+- **Privacidade na edição:** desfoque, pixelização e cobertura sólida em áreas retangulares ou ovais, com intensidade e inversão da região. As máscaras são estáticas por trecho; não acompanham automaticamente objetos em movimento. Para ocultar credenciais, prefira cobertura sólida e confira toda a duração do resultado.
+- **Narração pelo microfone:** grave áudio durante a edição, em uma trilha própria, e ajuste o volume separadamente da música.
+- **Preferências de microfone:** seleção e ajustes salvos para facilitar as próximas gravações.
+- **Editor mais compacto:** controles reorganizados, camadas de títulos e consulta aos atalhos de teclado.
+- **Cronômetros no Mac:** múltiplos cronômetros e contagens regressivas arrastáveis nas ferramentas de anotação, com controles individuais e aviso ao terminar.
+- **Manual do YouTube:** instruções atualizadas e acesso ao tutorial em vídeo.
+- **Parceiros e apoio:** carrossel navegável na barra lateral e opções de contribuição via Pix e PayPal.
 
 Continuam disponíveis seleção de área livre em qualquer monitor e destaque da janela antes de confirmar, importação unificada de MKV, áudio vinculado, projetos do zero, títulos, gráficos e as 15 fontes de títulos. Recursos MKV preservam faixas compatíveis e reproduzem a principal; não há edição independente de todas as faixas embutidas.
 
@@ -23,7 +23,7 @@ Barra flutuante, desenho e lupa continuam disponíveis somente no Mac. Gravaçã
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.25**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.26**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -37,4 +37,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.25/Dante-Studio-0.9.25-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
+A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.26/Dante-Studio-0.9.26-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
