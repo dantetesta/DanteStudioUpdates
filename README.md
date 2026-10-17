@@ -1,21 +1,21 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.28 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.29 para Mac e Windows**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.28/Dante-Studio-0.9.28-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.28/Dante-Studio-0.9.28-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.29/Dante-Studio-0.9.29-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.29/Dante-Studio-0.9.29-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.28
+## Novidades da 0.9.29
 
-- **30 estilos de títulos:** galeria com miniaturas, busca e ajustes de fonte, tamanho, contorno, sombra, fundo e transparência. Ajuste automático da caixa ao texto.
-- **Biblioteca Motion:** sete movimentos para títulos e mídias, com duração, intensidade e repetição. Inserção de elementos animados por clique ou arraste para a trilha de mídia.
-- **Importação de títulos:** SRT/TXT com minutagem cria títulos editáveis; bibliotecas de estilos usam JSON próprio com prévia antes de importar. Não importa projetos After Effects, PSD ou Lottie.
-- **Recorte e enquadramento:** Alt/Option nas alças para recortar, duplo clique para mover a imagem dentro da moldura e zoom interno.
-- **Só webcam:** novas edições usam os formatos horizontal, vertical ou quadrado sem criar trilha de tela ausente.
-- **Modo Sequência:** mova um take e os itens seguintes juntos para abrir espaço na montagem. Colagem prioriza os vãos livres.
-- **Cronômetros no Mac:** horas, minutos, segundos e milésimos no cronômetro e na contagem regressiva.
+- **Motion para tutoriais:** 12 modelos editáveis para capítulos, passos, dicas, alertas, atalhos, identificação e referências.
+- **Personalização nas Propriedades:** texto, complemento, selo, fonte e três cores. Cada alteração vale somente para o take selecionado e aceita Desfazer/Refazer.
+- **Entrada e saída independentes:** seis opções, duração e amplitude ajustáveis. A composição inteira entra, permanece visível e sai no final do take.
+- **Galeria visual:** categorias e prévias animadas; clique ou arraste um modelo para a trilha Mídia.
+- **Compatibilidade:** projetos e movimentos anteriores preservados. Corrigido o recarregamento do projeto aberto para usar seu estado atualizado.
+
+Continuam disponíveis os 30 estilos de títulos, importação SRT/TXT temporizado e bibliotecas JSON próprias, recorte Alt/Option, enquadramento dentro da moldura, formatos de Só webcam, modo Sequência e cronômetros com milésimos no Mac. Não importa projetos After Effects, PSD ou Lottie.
 
 Os recursos da versão anterior continuam disponíveis: narração pelo microfone, preferências de áudio, máscaras de privacidade, consulta aos atalhos, manual do YouTube em texto e vídeo, carrossel de parceiros e contribuição via Pix/PayPal. Máscaras são estáticas por trecho; não acompanham automaticamente objetos em movimento. Para ocultar credenciais, prefira cobertura sólida e confira toda a duração do resultado.
 
@@ -25,7 +25,7 @@ Barra flutuante, desenho e lupa continuam disponíveis somente no Mac. Gravaçã
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.28**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.29**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -39,4 +39,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.28/Dante-Studio-0.9.28-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
+A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.29/Dante-Studio-0.9.29-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
