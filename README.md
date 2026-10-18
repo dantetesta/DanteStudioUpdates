@@ -1,19 +1,20 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.29 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.30 para Mac e Windows**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.29/Dante-Studio-0.9.29-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.29/Dante-Studio-0.9.29-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.30/Dante-Studio-0.9.30-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.30/Dante-Studio-0.9.30-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.29
+## Novidades da 0.9.30
 
-- **Motion para tutoriais:** 12 modelos editáveis para capítulos, passos, dicas, alertas, atalhos, identificação e referências.
-- **Personalização nas Propriedades:** texto, complemento, selo, fonte e três cores. Cada alteração vale somente para o take selecionado e aceita Desfazer/Refazer.
-- **Entrada e saída independentes:** seis opções, duração e amplitude ajustáveis. A composição inteira entra, permanece visível e sai no final do take.
-- **Galeria visual:** categorias e prévias animadas; clique ou arraste um modelo para a trilha Mídia.
-- **Compatibilidade:** projetos e movimentos anteriores preservados. Corrigido o recarregamento do projeto aberto para usar seu estado atualizado.
+- **Motion graphics:** contador numérico, indicador circular, barra de progresso e destaque com ícone, além dos modelos para tutoriais — 16 opções no total.
+- **Seis estilos visuais:** livre, sólido, contorno, elevado, gradiente e translúcido; ajuste cores, cantos, bordas, sombra e opacidade.
+- **Contadores personalizáveis:** valor inicial/final, duração, casas decimais, prefixo e sufixo.
+- **Edição automática:** textos, fontes e aparência são aplicados sem o botão Aplicar composição, com Desfazer/Refazer.
+- **Fontes do computador:** seletor com busca para títulos e motions, incluindo as fontes incorporadas. Fontes locais precisam estar instaladas no computador usado para editar/exportar.
+- **Compatibilidade:** composições antigas preservadas; o conteúdo é editado somente no take selecionado.
 
 Continuam disponíveis os 30 estilos de títulos, importação SRT/TXT temporizado e bibliotecas JSON próprias, recorte Alt/Option, enquadramento dentro da moldura, formatos de Só webcam, modo Sequência e cronômetros com milésimos no Mac. Não importa projetos After Effects, PSD ou Lottie.
 
@@ -25,7 +26,7 @@ Barra flutuante, desenho e lupa continuam disponíveis somente no Mac. Gravaçã
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.29**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.30**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -39,4 +40,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.29/Dante-Studio-0.9.29-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
+A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.30/Dante-Studio-0.9.30-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
