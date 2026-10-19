@@ -1,19 +1,20 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.33 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.34 para Mac e Windows**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.33/Dante-Studio-0.9.33-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.33/Dante-Studio-0.9.33-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.34/Dante-Studio-0.9.34-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.34/Dante-Studio-0.9.34-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.33
+## Novidades da 0.9.34
 
-- **Importação em segundo plano:** vídeos, imagens, GIFs, áudios e SVGs compatíveis entram na fila sem bloquear o editor. Após analisar os metadados, você pode inserir e recortar o take enquanto a preparação continua.
-- **Seus cortes são preservados:** a conclusão mantém as alterações e o Desfazer. Há progresso, cancelamento e nova tentativa; tarefas interrompidas ficam identificadas ao reabrir.
-- **Velocidade também nas mídias importadas:** 0,25× a 4× em vídeos, GIFs, músicas e narrações, além dos takes capturados. Áudio vinculado acompanha o vídeo; o tom também muda.
-- **Ajustar ao canvas:** um botão centraliza e amplia proporcionalmente a mídia até caber no canvas, sem cortar e considerando a rotação.
-- **Barra compacta:** os comandos da timeline ficam em uma linha quando houver espaço e se reorganizam em janelas menores.
+- **Velocidade até 50×:** acelere gravações, vídeos e GIFs importados, músicas e narrações. Use os atalhos ou um valor personalizado, com seleção de takes/blocos e Desfazer. A câmera lenta permanece disponível a partir de 0,25×. O tom do áudio acompanha a velocidade.
+- **Prévia para velocidades altas:** acima de 4×, vídeo por quadros amostrados e suspensão somente do áudio dos takes rápidos. As demais faixas continuam tocando; a exportação inclui o áudio acelerado. O editor informa essa diferença.
+- **Limites de cada fonte:** a exportação confere os intervalos reais de tela, câmera e áudio separadamente, preservando as partes disponíveis de cada faixa. Arredondamentos do player não encurtam permanentemente a fonte nativa.
+- **Áudio em montagens rápidas:** melhorias no processamento da exportação com velocidades altas e combinações de takes rápidos e normais.
+
+A importação em segundo plano, o botão Ajustar ao canvas e a barra compacta da versão 0.9.33 continuam disponíveis.
 
 ## Recursos disponíveis
 
@@ -34,13 +35,13 @@ Barra flutuante, desenho e lupa continuam disponíveis somente no Mac. Gravaçã
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.33**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.34**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
 MKV e vídeos acima de 512 MiB passam pelo preparador com áudio compatível AAC, Opus, FLAC ou PCM mono/estéreo. MOV/MP4/M4V H.264/HEVC HDR compatíveis são preparados em H.264 SDR no Mac e Windows; vídeos HDR menores também são encaminhados automaticamente. No Windows, HEVC SDR também pode ser preparado sem instalar a extensão HEVC da loja. MKV HDR e codecs/áudio fora do contrato podem exigir conversão prévia. A preparação SDR não preserva canal alfa nem entrega um projeto HDR. Recursos nativos de prévia, transições preparadas e processamento avançado de voz continuam específicos do Mac. As seis fontes legadas e os emojis podem variar entre os sistemas; as nove novas famílias de títulos estão incorporadas ao aplicativo. SVG é estático, sanitizado e rasterizado, sem scripts ou referências externas.
 
-Projetos com velocidade em takes capturados precisam de 0.9.32 ou posterior; velocidade em mídias importadas, músicas e narrações requer 0.9.33. Imagens estáticas, títulos e Motion usam controles próprios de duração e animação.
+Projetos com velocidade em takes capturados precisam de 0.9.32 ou posterior; velocidade em mídias importadas, músicas e narrações requer 0.9.33. Velocidades acima de 4× requerem 0.9.34 ou posterior compatível. Imagens estáticas, títulos e Motion usam controles próprios de duração e animação.
 
 A fila prepara uma mídia por vez. Os próximos arquivos aparecem imediatamente e podem ser arrastados depois da análise de metadados. Prévia e som ficam disponíveis ao concluir a preparação; vídeos incompatíveis não são reproduzidos parcialmente. A exportação pede aguardar os recursos pendentes utilizados na timeline. O original permanece preservado.
 
@@ -52,4 +53,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A preparação de mídia utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.33/Dante-Studio-0.9.33-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.34/Dante-Studio-0.9.34-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
