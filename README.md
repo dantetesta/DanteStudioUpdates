@@ -1,17 +1,19 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.31 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.32 para Mac e Windows**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.31/Dante-Studio-0.9.31-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.31/Dante-Studio-0.9.31-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.32/Dante-Studio-0.9.32-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.32/Dante-Studio-0.9.32-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.31
+## Novidades da 0.9.32
 
-- **HDR no Mac:** importação de vídeos MOV/MP4/M4V HDR compatíveis, incluindo HLG e PQ, com preparação automática de uma cópia H.264 SDR para edição.
-- **Original preservado:** a preparação mantém o arquivo original, a orientação do vídeo e as faixas de áudio selecionadas, com progresso e cancelamento.
-- **Windows:** distribuição alinhada em 0.9.31. A preparação HDR nativa desta versão é exclusiva do macOS; no Windows, utilize vídeos SDR compatíveis.
+- **Velocidade no Mac e Windows:** câmera lenta e aceleração de 0,25× a 4× em takes ou blocos selecionados de Tela, Webcam, Microfone e Sistema, com seleção vinculada, Desfazer, salvamento e exportação.
+- **Áudio acompanha a velocidade:** o tom também muda. Títulos, mídias adicionais, música e narração mantêm suas durações nesta versão.
+- **MOV/HEVC e HDR também no Windows:** MOV/MP4/M4V compatíveis, incluindo HLG/PQ, são preparados automaticamente como cópia H.264 SDR. O Mac mantém seu preparador HDR nativo.
+- **Originais preservados:** preparação com progresso e cancelamento, mantendo a orientação e os áudios selecionados. A edição e a exportação são SDR.
+- **Sincronização:** correções na leitura temporal de MP4 e no áudio durante a mudança de velocidade.
 
 ## Recursos disponíveis
 
@@ -32,11 +34,13 @@ Barra flutuante, desenho e lupa continuam disponíveis somente no Mac. Gravaçã
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.31**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.32**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
-MKV e vídeos acima de 512 MiB passam pelo preparador com áudio compatível AAC, Opus, FLAC ou PCM mono/estéreo. No Mac, MOV/MP4/M4V H.264/HEVC HDR compatíveis são preparados em H.264 SDR; vídeos HDR menores também são encaminhados automaticamente para essa preparação. Os demais MP4/MOV/M4V menores mantêm a importação nativa e os formatos aceitos pela plataforma. MKV HDR, HDR no Windows e codecs/áudio não suportados podem exigir conversão prévia. A conversão SDR não preserva canal alfa nem entrega um projeto HDR. Recursos como proxies de prévia, transições preparadas, HEVC e processamento avançado de voz continuam específicos do Mac. As seis fontes legadas e os emojis podem variar entre os sistemas; as nove novas famílias de títulos estão incorporadas ao aplicativo. SVG é estático, sanitizado e rasterizado, sem scripts ou referências externas.
+MKV e vídeos acima de 512 MiB passam pelo preparador com áudio compatível AAC, Opus, FLAC ou PCM mono/estéreo. MOV/MP4/M4V H.264/HEVC HDR compatíveis são preparados em H.264 SDR no Mac e Windows; vídeos HDR menores também são encaminhados automaticamente. No Windows, HEVC SDR também pode ser preparado sem instalar a extensão HEVC da loja. MKV HDR e codecs/áudio fora do contrato podem exigir conversão prévia. A preparação SDR não preserva canal alfa nem entrega um projeto HDR. Recursos nativos de prévia, transições preparadas e processamento avançado de voz continuam específicos do Mac. As seis fontes legadas e os emojis podem variar entre os sistemas; as nove novas famílias de títulos estão incorporadas ao aplicativo. SVG é estático, sanitizado e rasterizado, sem scripts ou referências externas.
+
+Projetos com velocidade diferente de 1× precisam de 0.9.32 ou posterior; versões antigas não suportam o novo formato. A importação ainda aguarda a preparação: biblioteca instantânea e edição de recursos pendentes em background não fazem parte desta versão.
 
 No Windows e no macOS 14+, gravações fragmentadas reduzem o risco de perda após interrupções. A recuperação preserva os originais e depende dos fragmentos efetivamente gravados; não substitui backup. A finalização Windows verifica as trilhas para preservar também a cauda do áudio.
 
@@ -46,4 +50,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A importação MKV utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.31/Dante-Studio-0.9.31-FFmpeg-Source.zip). Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.32/Dante-Studio-0.9.32-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
