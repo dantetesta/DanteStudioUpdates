@@ -1,23 +1,21 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.35 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.36 para Mac e Windows**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.35/Dante-Studio-0.9.35-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.35/Dante-Studio-0.9.35-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.36/Dante-Studio-0.9.36-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.36/Dante-Studio-0.9.36-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.35
+## Novidades da 0.9.36
 
-- **Ferramentas de desenho no Windows:** setas, retângulos, elipses, caneta, textos e passos numerados, com seis cores, Desfazer e Limpar. As anotações aparecem no vídeo gravado.
-- **Barra flutuante no Windows:** gravar, pausar, continuar e finalizar; arraste ou recolha os controles. Escolha se a barra deve aparecer no vídeo.
-- **Lupa no Windows:** lente circular que acompanha o cursor e permite clicar no programa apresentado.
-- **Cronômetro e contagem regressiva no Windows:** horas, minutos, segundos e milésimos; regressivo padrão de um minuto, duração digitável e botões +1, +5 e +10 minutos. A barra permite um de cada por vez; ative uma ferramenta de desenho para arrastar os relógios.
-- **Retorno após erro:** a janela principal reaparece com a mensagem quando o início da gravação pela barra falha, permitindo revisar a configuração e tentar novamente.
+- **Importação mais estável:** cartões de tarefas já concluídas ou descartadas deixam de ocupar a capacidade da fila. Os arquivos originais e os recursos ainda necessários são preservados.
+- **Exportação Mac mais eficiente:** trechos curtos de áudio em arquivos longos deixam de exigir a preparação do áudio inteiro; arquivos temporários abandonados por uma interrupção são removidos de forma controlada.
+- **Editor mais previsível:** a tecla Espaço respeita botões e links em foco; a prévia continua respondendo quando o sistema suspende a atualização visual de uma janela em segundo plano.
+- **Anotações Windows:** formas podem ser criadas, movidas e redimensionadas pelo teclado; a barra se adapta melhor a telas com escala alta.
+- **Instalação e segurança:** falhas de bloqueio de arquivos no instalador Windows deixam um diagnóstico limitado; mensagens excessivas do helper são recusadas; atualizações Mac verificam também a identidade Apple. A checagem de avisos de dependências entrou no CI.
 
-As novas ferramentas Windows atendem à captura de tela, janela e área. O modo Só webcam permanece sem sobreposições. Os recursos já existentes no Mac são preservados; a lupa do Mac usa seu próprio modo de zoom.
-
-Continuam disponíveis velocidade de 0,25× a 50×, importação em segundo plano, Ajustar ao canvas e barra compacta do editor. Acima de 4×, a prévia usa quadros amostrados e suspende o áudio dos takes rápidos; a exportação inclui esse áudio, com alteração de tom.
+Os recursos de desenho, lupa e temporizadores da 0.9.35 continuam disponíveis. As validações automatizadas usam mídia sintética e runners Windows Server; captura com câmera e microfone físicos em computadores de usuários ainda requer teste próprio.
 
 ## Recursos disponíveis
 
@@ -38,7 +36,7 @@ Barra flutuante, desenho, lupa e temporizadores estão disponíveis no Mac e no 
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.35**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.36**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -56,4 +54,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A preparação de mídia utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.35/Dante-Studio-0.9.35-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.36/Dante-Studio-0.9.36-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
