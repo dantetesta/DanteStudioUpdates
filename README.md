@@ -1,21 +1,21 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.36 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.37 para Mac e Windows**.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.36/Dante-Studio-0.9.36-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.36/Dante-Studio-0.9.36-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.37/Dante-Studio-0.9.37-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.37/Dante-Studio-0.9.37-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.36
+## Novidades da 0.9.37
 
-- **Importação mais estável:** cartões de tarefas já concluídas ou descartadas deixam de ocupar a capacidade da fila. Os arquivos originais e os recursos ainda necessários são preservados.
-- **Exportação Mac mais eficiente:** trechos curtos de áudio em arquivos longos deixam de exigir a preparação do áudio inteiro; arquivos temporários abandonados por uma interrupção são removidos de forma controlada.
-- **Editor mais previsível:** a tecla Espaço respeita botões e links em foco; a prévia continua respondendo quando o sistema suspende a atualização visual de uma janela em segundo plano.
-- **Anotações Windows:** formas podem ser criadas, movidas e redimensionadas pelo teclado; a barra se adapta melhor a telas com escala alta.
-- **Instalação e segurança:** falhas de bloqueio de arquivos no instalador Windows deixam um diagnóstico limitado; mensagens excessivas do helper são recusadas; atualizações Mac verificam também a identidade Apple. A checagem de avisos de dependências entrou no CI.
+- **Prévia mais resistente:** recuperação do decoder quando uma busca não apresenta o quadro esperado, com preservação do destino mais recente após cortes. O botão “Recarregar imagem da prévia” refaz a imagem sem alterar os cortes ou o marcador.
+- **Motions favoritos:** guarde textos, cores, fonte, aparência e movimento na seção “Modelos salvos”. Remover um modelo mantém os demais favoritos. Títulos também têm uma estrela para salvar estilos.
+- **Área livre no Mac:** encaixar a seleção numa janela mantém a captura da região da tela. Para isolar uma janela, use a opção explícita “Janela exclusiva”. No Windows, “Área da janela” captura os pixels visíveis e informa essa diferença.
+- **Exportação protegida:** clique fora ou Esc preservam as configurações; use o X para fechar.
+- **Dependências de compilação atualizadas:** Vite 8.3.3 e Tokio 1.53.3, com correções de segurança e de segurança de I/O.
 
-Os recursos de desenho, lupa e temporizadores da 0.9.35 continuam disponíveis. As validações automatizadas usam mídia sintética e runners Windows Server; captura com câmera e microfone físicos em computadores de usuários ainda requer teste próprio.
+Continuam disponíveis as melhorias de importação, exportação de áudio e anotações das versões anteriores. As validações automatizadas usam mídia sintética e runners Windows Server. O teste longo de prévia verifica offsets acima de 4 GiB e falhas simuladas no WebKit do Mac; não equivale à reprodução da corrupção verde em toda GPU. Captura, câmera, microfone e audição físicos em computadores de usuários ainda precisam de teste próprio.
 
 ## Recursos disponíveis
 
@@ -36,7 +36,7 @@ Barra flutuante, desenho, lupa e temporizadores estão disponíveis no Mac e no 
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.36**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.37**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -54,4 +54,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A preparação de mídia utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.36/Dante-Studio-0.9.36-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.37/Dante-Studio-0.9.37-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
