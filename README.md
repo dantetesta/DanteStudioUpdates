@@ -1,13 +1,26 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.37 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.38 para Mac e Windows**.
+
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.37/Dante-Studio-0.9.37-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.37/Dante-Studio-0.9.37-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.38/Dante-Studio-0.9.38-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.38/Dante-Studio-0.9.38-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.37
+## Novidades da 0.9.38
+
+- **Prévia leve automática:** quando o editor está pausado, prepara uma cópia por vez conforme a capacidade do dispositivo. Use **Original** para inspecionar os detalhes ou **Cancelar** para pausar o preparo. Fontes sem cópia segura continuam no original; a exportação usa os originais.
+- **HEVC opcional na gravação do Mac:** disponível apenas quando a cadeia de hardware é compatível. H.264 continua padrão e a escolha não muda resolução ou quadros por segundo. HEVC pode economizar espaço, mas o resultado depende do conteúdo e há casos maiores; alguns aplicativos não o abrem. Windows continua gravando em H.264.
+- **Análise opcional de exportação:** **Equilibrada** preserva o perfil padrão. **Máxima eficiência**, quando disponível, compara uma alternativa à referência e mantém a referência se a alternativa não ficar menor ou falhar nos limites numéricos de qualidade. Pode exigir mais tempo e espaço temporário. **Até agora, a matriz de exportações testada conservou a referência: não houve ganho de tamanho comprovado desse modo.** Não é compressão sem perdas nem promessa de economia.
+- **Aviso sonoro ao concluir:** jingle original de quatro segundos somente depois de uma exportação nova concluída com sucesso. Falhas, cancelamentos e prévias não disparam o aviso.
+- **Lixeira por vídeo exportado:** confirme o arquivo escolhido para remover somente aquela exportação. As gravações e os demais vídeos ficam preservados.
+- **Manutenção dos cortes e da reprodução:** continuidade das emendas, recuperação do decoder e regras de sincronismo/privacidade preservadas. Ajustes de desempenho não alteram os cortes salvos ou os originais.
+- **Preparador de mídia atualizado:** FFmpeg 9.0.2 sob LGPL, com ferramentas offline separadas dos encoders nativos de captura/exportação. Sem componentes GPL/nonfree habilitados.
+
+A validação usa mídia sintética, helpers nativos, WebKit e runners de CI, conforme o recibo final de cada plataforma. O Mac universal foi validado em ARM, Rosetta e Intel. No Windows, a instalação e a preservação de arquivos passaram em Server 2022/2025; o EXE canônico também passou pela prova de prévias com IPC e pixels reais no WebView2. Não equivale a captura física de tela/câmera/microfone, audição ou homologação de todo hardware consumidor. Economia medida na captura HEVC não é ganho demonstrado na exportação.
+
+## Histórico preservado — novidades da 0.9.37
 
 - **Prévia mais resistente:** recuperação do decoder quando uma busca não apresenta o quadro esperado, com preservação do destino mais recente após cortes. O botão “Recarregar imagem da prévia” refaz a imagem sem alterar os cortes ou o marcador.
 - **Motions favoritos:** guarde textos, cores, fonte, aparência e movimento na seção “Modelos salvos”. Remover um modelo mantém os demais favoritos. Títulos também têm uma estrela para salvar estilos.
@@ -36,11 +49,11 @@ Barra flutuante, desenho, lupa e temporizadores estão disponíveis no Mac e no 
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.37**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.38**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
-MKV e vídeos acima de 512 MiB passam pelo preparador com áudio compatível AAC, Opus, FLAC ou PCM mono/estéreo. MOV/MP4/M4V H.264/HEVC HDR compatíveis são preparados em H.264 SDR no Mac e Windows; vídeos HDR menores também são encaminhados automaticamente. No Windows, HEVC SDR também pode ser preparado sem instalar a extensão HEVC da loja. MKV HDR e codecs/áudio fora do contrato podem exigir conversão prévia. A preparação SDR não preserva canal alfa nem entrega um projeto HDR. Recursos nativos de prévia, transições preparadas e processamento avançado de voz continuam específicos do Mac. As seis fontes legadas e os emojis podem variar entre os sistemas; as nove novas famílias de títulos estão incorporadas ao aplicativo. SVG é estático, sanitizado e rasterizado, sem scripts ou referências externas.
+MKV e vídeos acima de 512 MiB passam pelo preparador com áudio compatível AAC, Opus, FLAC ou PCM mono/estéreo. MOV/MP4/M4V H.264/HEVC HDR compatíveis são preparados em H.264 SDR no Mac e Windows; vídeos HDR menores também são encaminhados automaticamente. No Windows, HEVC SDR também pode ser preparado sem instalar a extensão HEVC da loja. MKV HDR e codecs/áudio fora do contrato podem exigir conversão prévia. A preparação SDR não preserva canal alfa nem entrega um projeto HDR. Cópias leves são oferecidas conforme a capacidade validada: Mac admite fontes opacas SDR compatíveis e Windows usa um caminho conservador H.264 SDR com cor declarada segura. Fontes sem interpretação segura, inclusive casos de início não zero fora do contrato Windows, continuam no original; isso não é anúncio de suporte a todos os timestamps ou formatos. Transições preparadas e processamento avançado de voz mantêm suas capacidades específicas do Mac. As seis fontes legadas e os emojis podem variar entre os sistemas; as nove novas famílias de títulos estão incorporadas ao aplicativo. SVG é estático, sanitizado e rasterizado, sem scripts ou referências externas.
 
 Projetos com velocidade em takes capturados precisam de 0.9.32 ou posterior; velocidade em mídias importadas, músicas e narrações requer 0.9.33. Velocidades acima de 4× requerem 0.9.34 ou posterior compatível. Imagens estáticas, títulos e Motion usam controles próprios de duração e animação.
 
@@ -54,4 +67,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A preparação de mídia utiliza programas FFmpeg 8.0.3 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.37/Dante-Studio-0.9.37-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.38/Dante-Studio-0.9.38-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
