@@ -1,14 +1,28 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.38 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.39 para Mac e Windows**.
 
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.38/Dante-Studio-0.9.38-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.38/Dante-Studio-0.9.38-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.39/Dante-Studio-0.9.39-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.39/Dante-Studio-0.9.39-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.38
+## Novidades da 0.9.39
+
+- **Motion com curvas:** escolha movimento linear, aceleração, desaceleração ou curva suave; entrada e saída podem usar curvas diferentes. Novas fases Descer, Afastar e Inclinar.
+- **Animação por pontos:** trajetórias com 2 a 32 pontos para posição, escala, rotação e opacidade, com interpolação configurável e persistência no projeto.
+- **22 modelos Motion:** seis novas composições editáveis, sem adicionar bibliotecas de animação ao aplicativo.
+- **15 transições:** novas opções de empurrar para cima, empurrar para baixo e leque radial. Curvas de progresso e suavidade de bordas ajustáveis nas máscaras compatíveis.
+- **Sem vãos aprimorado:** compacta os espaços existentes considerando o conteúdo de todas as faixas, com desfazer/refazer da mudança completa; quando não há espaços, alterna o modo automático.
+- **Prévia pausada de transições corrigida:** evita ficar presa no primeiro quadro enquanto os decoders de borda terminam o seek. Reutiliza os decoders existentes e renova o cache quando o quadro é apresentado.
+- **Dispositivos acompanhados por eventos:** atualiza o inventário de câmeras, microfones e monitores pelas notificações nativas. Adia a atualização durante operações ocupadas e não troca silenciosamente uma tela desconectada por outra.
+
+Projetos antigos preservam o comportamento quando as novas opções estão ausentes. Projetos que usam as novas animações e transições precisam da 0.9.39 nos demais computadores. Estas melhorias não incluem transcrição automática ou revelação de títulos por palavra. O custo de processamento depende da composição e do equipamento.
+
+A validação desta versão inclui exportações sintéticas decodificadas com as novas curvas, pontos e transições nos helpers empacotados, Mac ARM/Rosetta/Intel e Windows Server 2022/2025, além de instalação e IPC no Windows. Hotplug físico, captura física, audição e substituição instalada pelo atualizador não foram homologados nesta entrega. Windows continua com instalação e atualização manuais.
+
+## Histórico preservado — novidades da 0.9.38
 
 - **Prévia leve automática:** quando o editor está pausado, prepara uma cópia por vez conforme a capacidade do dispositivo. Use **Original** para inspecionar os detalhes ou **Cancelar** para pausar o preparo. Fontes sem cópia segura continuam no original; a exportação usa os originais.
 - **HEVC opcional na gravação do Mac:** disponível apenas quando a cadeia de hardware é compatível. H.264 continua padrão e a escolha não muda resolução ou quadros por segundo. HEVC pode economizar espaço, mas o resultado depende do conteúdo e há casos maiores; alguns aplicativos não o abrem. Windows continua gravando em H.264.
@@ -32,7 +46,7 @@ Continuam disponíveis as melhorias de importação, exportação de áudio e an
 
 ## Recursos disponíveis
 
-- **Motion graphics:** contador numérico, indicador circular, barra de progresso e destaque com ícone, além dos modelos para tutoriais — 16 opções no total.
+- **Motion graphics:** contador numérico, indicador circular, barra de progresso e destaque com ícone, além dos modelos para tutoriais — 22 opções no total.
 - **Seis estilos visuais:** livre, sólido, contorno, elevado, gradiente e translúcido; ajuste cores, cantos, bordas, sombra e opacidade.
 - **Contadores personalizáveis:** valor inicial/final, duração, casas decimais, prefixo e sufixo.
 - **Edição automática:** textos, fontes e aparência são aplicados sem o botão Aplicar composição, com Desfazer/Refazer.
@@ -49,7 +63,7 @@ Barra flutuante, desenho, lupa e temporizadores estão disponíveis no Mac e no 
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.38**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.39**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -67,4 +81,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.38/Dante-Studio-0.9.38-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.39/Dante-Studio-0.9.39-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
