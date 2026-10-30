@@ -1,14 +1,23 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.39 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.40 para Mac e Windows**.
 
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.39/Dante-Studio-0.9.39-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.39/Dante-Studio-0.9.39-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.40/Dante-Studio-0.9.40-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.40/Dante-Studio-0.9.40-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.39
+## Novidades da 0.9.40
+
+- **Tela inteira com confirmação:** a janela principal permanece visível enquanto a barra flutuante é preparada; ela só é ocultada após a confirmação de abertura dos controles.
+- **Recuperação em caso de falha:** erros na seleção ou na abertura da barra restauram a janela principal para uma nova tentativa.
+- **Barra flutuante no Windows:** verifica o monitor, posicionamento e visibilidade antes de confirmar a abertura. Ao selecionar outra fonte, reposiciona os controles; atualizações da mesma fonte preservam a posição arrastada.
+- **Dispositivos no Windows:** tratamento de falhas na identificação de câmeras e microfones, com liberação dos recursos também em caso de erro.
+
+O encerramento relatado em um computador com monitor 2 ainda não foi reproduzido fisicamente. Esta versão corrige as falhas encontradas no fluxo de seleção e reforça o tratamento de erros. Testes automatizados e runners Windows Server não equivalem à homologação de todos os monitores, drivers ou configurações de escala. Windows continua com instalação e atualização manuais.
+
+## Histórico preservado — novidades da 0.9.39
 
 - **Motion com curvas:** escolha movimento linear, aceleração, desaceleração ou curva suave; entrada e saída podem usar curvas diferentes. Novas fases Descer, Afastar e Inclinar.
 - **Animação por pontos:** trajetórias com 2 a 32 pontos para posição, escala, rotação e opacidade, com interpolação configurável e persistência no projeto.
@@ -63,7 +72,7 @@ Barra flutuante, desenho, lupa e temporizadores estão disponíveis no Mac e no 
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.39**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.40**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
