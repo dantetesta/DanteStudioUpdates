@@ -1,14 +1,24 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.41 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.42 para Mac e Windows**.
 
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.41/Dante-Studio-0.9.41-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.41/Dante-Studio-0.9.41-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.42/Dante-Studio-0.9.42-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.42/Dante-Studio-0.9.42-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.41
+## Novidades da 0.9.42
+
+- **Área livre entre monitores:** comece o arraste em uma tela e termine em outra para gravar a região em um único vídeo.
+- **Todos os monitores:** um novo botão prepara o desktop inteiro, respeitando a disposição das telas e deixando pretos os espaços sem monitor.
+- **Seleção ligada ao layout:** mudanças de posição, resolução ou monitores exigem uma nova seleção; não há troca silenciosa para outra tela.
+- **Créditos reorganizados:** perfil do autor, site, comunidade e apoio voluntário por Pix/PayPal em um painel adaptável aos temas claro e escuro.
+- **Converse com Dante Testa:** o botão de WhatsApp nos créditos permite conversar sobre o desenvolvimento do seu próximo software. O Dante Studio continua gratuito.
+
+A saída preserva as opções de qualidade/FPS sob o limite existente de **3840 pixels no maior lado**. Conjuntos muito largos podem reduzir a legibilidade; a versão não promete gravar todas as telas em resolução nativa simultânea. Os testes usam composições e monitores sintéticos, contratos do helper e CI; não homologam todas as GPUs, escalas ou quatro monitores físicos. Windows continua com instalação e atualização manual.
+
+## Histórico preservado — novidades da 0.9.41
 
 - **Anotações no Windows:** preparação de cada quadro fora da tela para evitar o apagamento intermediário dos desenhos, especialmente durante o uso da lupa.
 - **Paleta de escrita:** ícones vetoriais, ferramentas reorganizadas em linhas e campo de texto com aparência consistente.
