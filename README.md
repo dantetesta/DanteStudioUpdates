@@ -1,14 +1,25 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.40 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.41 para Mac e Windows**.
 
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.40/Dante-Studio-0.9.40-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.40/Dante-Studio-0.9.40-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.41/Dante-Studio-0.9.41-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.41/Dante-Studio-0.9.41-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.40
+## Novidades da 0.9.41
+
+- **Anotações no Windows:** preparação de cada quadro fora da tela para evitar o apagamento intermediário dos desenhos, especialmente durante o uso da lupa.
+- **Paleta de escrita:** ícones vetoriais, ferramentas reorganizadas em linhas e campo de texto com aparência consistente.
+- **Retorno após a seleção:** o Studio reaparece quando o seletor termina, inclusive ao cancelar ou ocorrer um erro. Só fica oculto após a confirmação dos controles flutuantes.
+- **Uma instância do aplicativo:** abrir novamente traz a janela existente para frente, inclusive quando ela estava oculta.
+- **Seleção de janela no Windows:** superfícies internas de anotações, controles e seleção são excluídas dos alvos.
+- **Saída durante a gravação:** o X orienta a usar **Parar e salvar**, mantendo os controles acessíveis e preservando a gravação em andamento.
+
+A validação inclui fixtures nativas, interface e instalação no CI. Os relatos originais não tiveram uma causa única de encerramento confirmada; isso não equivale a homologação de todo monitor, GPU ou escala de DPI.
+
+## Histórico preservado — novidades da 0.9.40
 
 - **Tela inteira com confirmação:** a janela principal permanece visível enquanto a barra flutuante é preparada; ela só é ocultada após a confirmação de abertura dos controles.
 - **Recuperação em caso de falha:** erros na seleção ou na abertura da barra restauram a janela principal para uma nova tentativa.
@@ -72,7 +83,7 @@ Barra flutuante, desenho, lupa e temporizadores estão disponíveis no Mac e no 
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.40**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.41**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -90,4 +101,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.39/Dante-Studio-0.9.39-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.41/Dante-Studio-0.9.41-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
