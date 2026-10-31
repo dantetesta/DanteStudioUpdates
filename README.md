@@ -1,14 +1,23 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.42 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.43 para Mac e Windows**.
 
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.42/Dante-Studio-0.9.42-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.42/Dante-Studio-0.9.42-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.43/Dante-Studio-0.9.43-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.43/Dante-Studio-0.9.43-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.42
+## Novidades da 0.9.43
+
+- **Gravador visível no Windows:** confirmar Área livre, Área da janela, Tela inteira ou Todos os monitores mantém a janela principal aberta, com **Iniciar gravação** disponível.
+- **Controle compacto por escolha:** use o botão quando quiser passar às ferramentas flutuantes. Confirmar uma seleção não inicia a gravação automaticamente.
+- **Inicialização mais clara:** a seleção aguarda o carregamento dos dispositivos e preferências. A interface mostra Carregando enquanto identifica a plataforma e os monitores.
+- **Mac universal:** versão sincronizada e indicação de carregamento inicial melhorada; o fluxo compacto da seleção foi preservado.
+
+O retorno do cliente mostrou os processos do Studio e do helper presentes no Gerenciador de Tarefas, compatível com a ocultação encontrada no código. O ajuste foi coberto por regressão de interface com quatro monitores simulados; a confirmação no computador do cliente depende de teste após instalar. A contagem regressiva do Mac não foi alterada nesta versão. No Windows, instalação e atualização continuam manuais.
+
+## Histórico preservado — novidades da 0.9.42
 
 - **Área livre entre monitores:** comece o arraste em uma tela e termine em outra para gravar a região em um único vídeo.
 - **Todos os monitores:** um novo botão prepara o desktop inteiro, respeitando a disposição das telas e deixando pretos os espaços sem monitor.
