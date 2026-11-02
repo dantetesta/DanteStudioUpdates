@@ -1,14 +1,23 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.43 para Mac e Windows**.
+Gravador e editor de tutoriais gratuito. Versão atual: **0.9.44 para Mac e Windows**.
 
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.43/Dante-Studio-0.9.43-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.43/Dante-Studio-0.9.43-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.44/Dante-Studio-0.9.44-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.44/Dante-Studio-0.9.44-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 
-## Novidades da 0.9.43
+## Novidades da 0.9.44
+
+- **Windows com controles acessíveis ao iniciar:** a janela principal continua aberta, com Pausar, Continuar e Parar e salvar, mesmo quando as ferramentas flutuantes estão disponíveis. Vale para uma tela, Área livre e Todos os monitores.
+- **Modo compacto por escolha:** use Controle compacto quando quiser ocultar a janela principal. Iniciar pela janela principal não ativa esse modo automaticamente.
+- **Janela do Studio fora do vídeo:** antes de iniciar captura de tela, o programa solicita e confere a exclusão de sua janela. Se o Windows não confirmar a proteção, o início é interrompido com uma explicação. Ao encerrar, a política normal é restaurada. Durante a captura, essa proteção também pode impedir que a janela apareça em gravações externas e compartilhamentos de tela.
+- **Mac universal:** versão sincronizada para Intel e Apple Silicon, mantendo o fluxo anterior de gravação. Projetos e arquivos originais preservados.
+
+A correção trata a ocultação da janela no início. A validação de interface, APIs Windows e execução instalada no CI não substitui o reteste no computador do usuário nem homologa todos os monitores, GPUs e drivers. A contagem regressiva do Mac não foi alterada. Windows continua com atualização manual pelo instalador.
+
+## Histórico preservado — novidades da 0.9.43
 
 - **Gravador visível no Windows:** confirmar Área livre, Área da janela, Tela inteira ou Todos os monitores mantém a janela principal aberta, com **Iniciar gravação** disponível.
 - **Controle compacto por escolha:** use o botão quando quiser passar às ferramentas flutuantes. Confirmar uma seleção não inicia a gravação automaticamente.
