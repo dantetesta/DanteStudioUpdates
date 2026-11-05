@@ -1,14 +1,26 @@
 # Dante Studio
 
-Gravador e editor de tutoriais gratuito. Versão atual: **0.9.44 para Mac e Windows**.
-
+Gravador e editor de tutoriais. Versão atual: **0.9.45 para Mac e Windows**.
+A partir desta versão, o uso requer uma **licença válida da plataforma escolhida**,
+ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.44/Dante-Studio-0.9.44-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.44/Dante-Studio-0.9.44-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.45/Dante-Studio-0.9.45-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.45/Dante-Studio-0.9.45-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
 
-## Novidades da 0.9.44
+## Novidades da 0.9.45
+
+- **Licenciamento por chave:** produtos e licenças separados para Windows e macOS, com ativação no aplicativo.
+- **Validade visível:** consulte o estado da licença e as opções de renovação e suporte.
+- **Uso offline:** disponível dentro da validade de uma licença previamente confirmada; a primeira ativação exige conexão.
+- **Trabalho preservado:** se a licença vencer durante o uso, parar, salvar e recuperar continuam disponíveis.
+
+Esta versão adiciona o licenciamento. Não inclui mudanças no encoder nem na contagem regressiva.
+Windows mantém instalação e atualização manual. A descoberta pelo updater não equivale à substituição instalada.
+
+## Histórico preservado — novidades da 0.9.44
 
 - **Windows com controles acessíveis ao iniciar:** a janela principal continua aberta, com Pausar, Continuar e Parar e salvar, mesmo quando as ferramentas flutuantes estão disponíveis. Vale para uma tela, Área livre e Todos os monitores.
 - **Modo compacto por escolha:** use Controle compacto quando quiser ocultar a janela principal. Iniciar pela janela principal não ativa esse modo automaticamente.
@@ -129,4 +141,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.41/Dante-Studio-0.9.41-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.45/Dante-Studio-0.9.45-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
