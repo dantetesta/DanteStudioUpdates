@@ -1,16 +1,25 @@
 # Dante Studio
 
-Gravador e editor de tutoriais. Versão atual: **0.9.45 para Mac e Windows**.
-A partir desta versão, o uso requer uma **licença válida da plataforma escolhida**,
+Gravador e editor de tutoriais. Versão atual: **0.9.46 para Mac e Windows**.
+Desde a 0.9.45, o uso requer uma **licença válida da plataforma escolhida**,
 ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.45/Dante-Studio-0.9.45-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.45/Dante-Studio-0.9.45-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.46/Dante-Studio-0.9.46-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.46/Dante-Studio-0.9.46-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 - Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
 
-## Novidades da 0.9.45
+## Novidades da 0.9.46
+
+- **Só os recursos usados:** exportação e preparação de trechos não abrem os arquivos da biblioteca que não participam da montagem. A biblioteca salva permanece intacta.
+- **Windows:** composição de camadas com cálculo inteiro exato e processamento offline da exportação, preservando o comportamento da captura.
+- **Mac:** conferência de qualidade do modo Máxima eficiência acelerada com SIMD, mantendo os mesmos critérios e a referência quando o candidato não é aprovado.
+- **Trabalho preservado:** sem alteração de projetos, originais ou das políticas de resolução, FPS, bitrate, codec e áudio.
+
+O ganho varia conforme a montagem e o computador. A aceleração da conferência no Mac é uma melhoria dessa etapa, não um fator garantido para todo render. Windows continua com instalação e atualização manual.
+
+## Histórico preservado — novidades da 0.9.45
 
 - **Licenciamento por chave:** produtos e licenças separados para Windows e macOS, com ativação no aplicativo.
 - **Validade visível:** consulte o estado da licença e as opções de renovação e suporte.
