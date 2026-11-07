@@ -1,14 +1,24 @@
 # Dante Studio
 
-Gravador e editor de tutoriais. Versão atual: **0.9.46 para Mac e Windows**.
+Gravador e editor de tutoriais. Versão atual: **0.9.47 para Mac e Windows**.
 Desde a 0.9.45, o uso requer uma **licença válida da plataforma escolhida**,
 ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.46/Dante-Studio-0.9.46-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.46/Dante-Studio-0.9.46-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.47/Dante-Studio-0.9.47-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.47/Dante-Studio-0.9.47-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 - Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
+
+## Novidades da 0.9.47
+
+- **Reprodução após cortes:** corrigido um arredondamento de áudio que podia impedir o Play e exibir “offset value should be positive” em determinadas posições da montagem.
+- **Importação HEVC/HDR:** corrigida uma reserva exagerada de espaço temporário. A estimativa considera o conversor e mantém margem de segurança; o aviso informa GB necessários e disponíveis no destino. Presets e qualidade preservados.
+- **Fechamento protegido:** a confirmação aguarda operações curtas da prévia, mantendo o salvamento e as barreiras de gravação e exportação.
+- **Regressões de prévia:** corte, reinícios perto das emendas, saltos para longe e retorno e salvar/reabrir foram verificados com mídia sintética, preservando a edição.
+- Cortes, originais, volumes, velocidades e configurações de exportação são preservados. Mantém as melhorias de renderização da 0.9.46.
+
+As provas de CI não substituem reteste no arquivo e hardware do usuário. Windows continua com instalação e atualização manual.
 
 ## Novidades da 0.9.46
 
@@ -128,7 +138,7 @@ Os recursos da versão anterior continuam disponíveis: narração pelo microfon
 
 Continuam disponíveis seleção de área livre em qualquer monitor e destaque da janela antes de confirmar, importação unificada de MKV, áudio vinculado, projetos do zero, títulos, gráficos e as 15 fontes de títulos. Recursos MKV preservam faixas compatíveis e reproduzem a principal; não há edição independente de todas as faixas embutidas.
 
-Barra flutuante, desenho, lupa e temporizadores estão disponíveis no Mac e no Windows, com interfaces e comportamentos específicos de cada plataforma. No Windows, dependem da composição da área de trabalho e da exclusão de janelas da captura. Gravação simultânea de vários monitores em mosaico ainda não foi implementada.
+Barra flutuante, desenho, lupa e temporizadores estão disponíveis no Mac e no Windows, com interfaces e comportamentos específicos de cada plataforma. No Windows, dependem da composição da área de trabalho e da exclusão de janelas da captura. Área livre pode atravessar monitores; Todos os monitores compõe uma região global em um vídeo, com lacunas pretas e limite atual de 3840 pixels no maior lado.
 
 ## Atualização no Mac
 
@@ -150,4 +160,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.45/Dante-Studio-0.9.45-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.47/Dante-Studio-0.9.47-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
