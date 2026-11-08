@@ -1,16 +1,26 @@
 # Dante Studio
 
-Gravador e editor de tutoriais. Versão atual: **0.9.47 para Mac e Windows**.
+Gravador e editor de tutoriais. Versão atual: **0.9.48 para Mac e Windows**.
 Desde a 0.9.45, o uso requer uma **licença válida da plataforma escolhida**,
 ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.47/Dante-Studio-0.9.47-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.47/Dante-Studio-0.9.47-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.48/Dante-Studio-0.9.48-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.48/Dante-Studio-0.9.48-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 - Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
 
-## Novidades da 0.9.47
+## Novidades da 0.9.48
+
+- **Biblioteca com buffer por demanda:** vídeos compatíveis podem ser vistos e ouvidos durante a preparação definitiva, em trechos completos, com prioridade ao instante atual e antecipação dos próximos trechos.
+- **Busca e sincronismo:** buscas distantes substituem pedidos antigos. O player informa o carregamento e mantém imagem e áudio juntos; a troca para a mídia definitiva preserva a edição.
+- **Sem conversão integral automática da biblioteca:** a cópia leve completa de vídeos importados passa a ser opcional e inclui apenas os vídeos usados na montagem. A automação de tela e webcam capturadas permanece.
+- **Exportação preservada:** usa a mídia definitiva e a qualidade escolhida, aguardando a preparação dos recursos usados. Cortes, velocidades e originais são preservados.
+- **Compatibilidade explícita:** MKV no macOS aguarda o preparo integral. Faixas MOV/MP4 com edições internas que o conversor ainda não preserva recebem aviso antes de importar; use áudio consolidado ou a seleção somente de vídeo.
+
+A disponibilidade e o tempo da prévia dependem do formato e do computador. Windows mantém instalação e atualização manual.
+
+## Histórico preservado — novidades da 0.9.47
 
 - **Reprodução após cortes:** corrigido um arredondamento de áudio que podia impedir o Play e exibir “offset value should be positive” em determinadas posições da montagem.
 - **Importação HEVC/HDR:** corrigida uma reserva exagerada de espaço temporário. A estimativa considera o conversor e mantém margem de segurança; o aviso informa GB necessários e disponíveis no destino. Presets e qualidade preservados.
