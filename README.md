@@ -1,16 +1,25 @@
 # Dante Studio
 
-Gravador e editor de tutoriais. Versão atual: **0.9.48 para Mac e Windows**.
+Gravador e editor de tutoriais. Versão atual: **0.9.49 para Mac e Windows**.
 Desde a 0.9.45, o uso requer uma **licença válida da plataforma escolhida**,
 ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.48/Dante-Studio-0.9.48-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.48/Dante-Studio-0.9.48-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.49/Dante-Studio-0.9.49-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.49/Dante-Studio-0.9.49-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 - Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
 
-## Novidades da 0.9.48
+## Novidades da 0.9.49
+
+- **Exportação Windows mais eficiente:** reutilização dos buffers de vídeo reduz cópias e alocações de quadros grandes.
+- **Qualidade preservada:** imagem, áudio, cortes, resolução, FPS e compressão escolhidos mantêm seus critérios.
+- **Sem exigir GPU dedicada:** mantém o caminho compatível com Windows 10 build 19041+ e Windows 11 x64, sem dependência de RTX.
+- **Mac universal:** pacote de versão sincronizada, sem mudança funcional no macOS nesta rodada.
+
+Nos ensaios sintéticos em Windows, a redução de tempo ficou entre 7% e 10%, variando por cenário. O resultado depende do conteúdo e do computador; esta versão não acrescenta aceleração por GPU. Testes de CI não substituem validação no hardware do usuário. Instalação e atualização Windows continuam manuais.
+
+## Histórico preservado — novidades da 0.9.48
 
 - **Biblioteca com buffer por demanda:** vídeos compatíveis podem ser vistos e ouvidos durante a preparação definitiva, em trechos completos, com prioridade ao instante atual e antecipação dos próximos trechos.
 - **Busca e sincronismo:** buscas distantes substituem pedidos antigos. O player informa o carregamento e mantém imagem e áudio juntos; a troca para a mídia definitiva preserva a edição.
@@ -152,7 +161,7 @@ Barra flutuante, desenho, lupa e temporizadores estão disponíveis no Mac e no 
 
 ## Atualização no Mac
 
-Verifique as atualizações dentro do aplicativo para receber a **0.9.41**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
+Verifique as atualizações dentro do aplicativo para receber a **0.9.49**. Quem usa o atualizador antigo recebe primeiro a ponte **0.9.16**; após reiniciar, verifique novamente para chegar à versão atual. O DMG acima permite instalar diretamente. O canal ARM legado permanece na ponte 0.9.0.
 
 ## Compatibilidade
 
@@ -160,7 +169,7 @@ MKV e vídeos acima de 512 MiB passam pelo preparador com áudio compatível AAC
 
 Projetos com velocidade em takes capturados precisam de 0.9.32 ou posterior; velocidade em mídias importadas, músicas e narrações requer 0.9.33. Velocidades acima de 4× requerem 0.9.34 ou posterior compatível. Imagens estáticas, títulos e Motion usam controles próprios de duração e animação.
 
-A fila prepara uma mídia por vez. Os próximos arquivos aparecem imediatamente e podem ser arrastados depois da análise de metadados. Prévia e som ficam disponíveis ao concluir a preparação; vídeos incompatíveis não são reproduzidos parcialmente. A exportação pede aguardar os recursos pendentes utilizados na timeline. O original permanece preservado.
+A fila prepara uma mídia por vez. Os próximos arquivos aparecem imediatamente e podem ser arrastados depois da análise de metadados. Vídeos compatíveis podem oferecer imagem e som por trechos completos durante a preparação; os demais aguardam o preparo definitivo. Arquivos incompletos não são reproduzidos. A exportação pede aguardar os recursos pendentes utilizados na timeline. O original permanece preservado.
 
 No Windows e no macOS 14+, gravações fragmentadas reduzem o risco de perda após interrupções. A recuperação preserva os originais e depende dos fragmentos efetivamente gravados; não substitui backup. A finalização Windows verifica as trilhas para preservar também a cauda do áudio.
 
@@ -170,4 +179,4 @@ O instalador Windows ainda não possui certificado Authenticode próprio e não 
 
 Fontes do aplicativo mantidas em repositório privado. Instaladores contêm somente runtime, licenças e metadados necessários. Materiais de divulgação ficam separados.
 
-A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.47/Dante-Studio-0.9.47-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
+A preparação de mídia utiliza programas FFmpeg 9.0.2 sob LGPL 2.1 ou posterior. [Código-fonte correspondente, licença e receita de compilação](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.49/Dante-Studio-0.9.49-FFmpeg-Source.zip). O conversor Windows inclui zimg para cores HDR. O arquivo separado contém ambos os fontes e a receita atual. Sem componentes GPL/nonfree habilitados.
