@@ -1,16 +1,25 @@
 # Dante Studio
 
-Gravador e editor de tutoriais. Versão atual: **0.9.49 para Mac e Windows**.
+Gravador e editor de tutoriais. Versão atual: **0.9.50 para Mac e Windows**.
 Desde a 0.9.45, o uso requer uma **licença válida da plataforma escolhida**,
 ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.49/Dante-Studio-0.9.49-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.49/Dante-Studio-0.9.49-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.50/Dante-Studio-0.9.50-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.50/Dante-Studio-0.9.50-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 - Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
 
-## Novidades da 0.9.49
+## Novidades da 0.9.50
+
+- **Prévia do editor:** corrigidas resincronizações repetidas quando a busca do vídeo demora e a imagem fica atrasada em relação ao áudio.
+- **Recuperação gradual:** o controle considera o tempo de resposta do decoder e espera a apresentação do quadro antes de iniciar outra correção.
+- **Trabalho preservado:** cortes, projetos salvos, arquivos originais, áudio e qualidade de exportação mantêm seus critérios.
+- **Mac e Windows:** aplicativo universal no macOS e instalador x64 para Windows 10 build 19041+ / Windows 11.
+
+O ajuste atua na prévia e ocorre gradualmente. Não corrige áudio já gravado. Testes sintéticos não substituem a conferência no projeto e hardware do usuário. A atualização Windows continua manual.
+
+## Histórico preservado — novidades da 0.9.49
 
 - **Exportação Windows mais eficiente:** reutilização dos buffers de vídeo reduz cópias e alocações de quadros grandes.
 - **Qualidade preservada:** imagem, áudio, cortes, resolução, FPS e compressão escolhidos mantêm seus critérios.
