@@ -1,16 +1,27 @@
 # Dante Studio
 
-Gravador e editor de tutoriais. Versão atual: **0.9.50 para Mac e Windows**.
+Gravador e editor de tutoriais. Versão atual: **0.9.51 para Mac e Windows**.
 Desde a 0.9.45, o uso requer uma **licença válida da plataforma escolhida**,
 ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.50/Dante-Studio-0.9.50-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.50/Dante-Studio-0.9.50-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.51/Dante-Studio-0.9.51-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.51/Dante-Studio-0.9.51-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 - Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
 
-## Novidades da 0.9.50
+## Novidades da 0.9.51
+
+- **Picos mais nítidos:** forma de onda com mais detalhe e maior contraste entre picos e trechos baixos.
+- **Onda alinhada aos clipes:** desenho na escala completa do fragmento, inclusive após cortes, zoom e mudanças de velocidade.
+- **Área visível:** o editor limita o desenho da onda ao trecho visível para reduzir o trabalho durante a reprodução.
+- **Mac e Windows:** aplicativo universal no macOS e instalador x64 para Windows 10 build 19041+ / Windows 11.
+
+- **Windows:** corrige um deslocamento inicial em AAC/MP4 quando o leitor do sistema aplica a edição de início com o sinal invertido.
+
+Os arquivos originais permanecem preservados. A atualização Windows continua manual.
+
+## Histórico preservado — novidades da 0.9.50
 
 - **Prévia do editor:** corrigidas resincronizações repetidas quando a busca do vídeo demora e a imagem fica atrasada em relação ao áudio.
 - **Recuperação gradual:** o controle considera o tempo de resposta do decoder e espera a apresentação do quadro antes de iniciar outra correção.
