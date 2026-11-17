@@ -1,16 +1,28 @@
 # Dante Studio
 
-Gravador e editor de tutoriais. Versão atual: **0.9.52 para Mac e Windows**.
+Gravador e editor de tutoriais. Versão atual: **0.9.53 para Mac e Windows**.
 Desde a 0.9.45, o uso requer uma **licença válida da plataforma escolhida**,
 ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.52/Dante-Studio-0.9.52-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.52/Dante-Studio-0.9.52-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.53/Dante-Studio-0.9.53-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.53/Dante-Studio-0.9.53-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 - Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
 
-## Novidades da 0.9.52
+## Novidades da 0.9.53
+
+- **Play e Espaço:** conservam o comando durante a preparação do áudio e da voz, com cancelamento imediato e indicação de preparo. Leituras PCM equivalentes são reaproveitadas.
+- **Prévia:** pequenos ajustes de sincronismo usam o relógio de saída do áudio e os quadros apresentados. A ocorrência pessoal de atraso ainda exige audição no equipamento.
+- **Tema claro:** tons de cinza, controles compactos, inspetor reorganizado e foco de teclado discreto.
+- **Formas básicas:** seis formas por clique, contorno opcional com cor e espessura e preenchimento sólido ou gradiente linear/radial.
+- **Player destacável:** janela própria para levar a prévia a outro monitor e liberar espaço para a timeline.
+- **Transcrição:** processamento local com Whisper configurado pelo usuário ou OpenAI com consentimento por envio; busca e exportação em TXT, TXT com tempo e SRT.
+- **Sugestões de cortes:** seleção de trechos pela transcrição, agrupamento local por duração/pausas, revisão antes de aplicar e desfazer.
+
+O executável e o modelo Whisper são selecionados pelo usuário e não acompanham o instalador. OpenAI requer chave própria e pode gerar cobrança. A aplicação de cortes informa incompatibilidades com animações, zooms e fades antes de alterar a montagem. Projetos e originais são preservados. Windows mantém instalação/atualização manuais e não possui Authenticode próprio.
+
+## Histórico preservado — novidades da 0.9.52
 
 - **macOS — exportação de MOV:** corrige a recusa de cortes válidos até o fim de vídeos importados, inclusive MOV do iPhone, causada pelo arredondamento da duração.
 - **Precisão de importação:** usa o relógio original do vídeo para ler sua duração quando disponível.
