@@ -1,16 +1,28 @@
 # Dante Studio
 
-Gravador e editor de tutoriais. Versão atual: **0.9.54 para Mac e Windows**.
+Gravador e editor de tutoriais. Versão atual: **0.9.55 para Mac e Windows**.
 Desde a 0.9.45, o uso requer uma **licença válida da plataforma escolhida**,
 ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.54/Dante-Studio-0.9.54-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.54/Dante-Studio-0.9.54-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.55/Dante-Studio-0.9.55-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.55/Dante-Studio-0.9.55-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 - Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
 
-## Novidades da 0.9.54
+## Novidades da 0.9.55
+
+- **Legendas automáticas no vídeo:** gere a partir da narração, corrija palavras e personalize fonte, cores, fundo, contorno e sombra. A trilha **Legendas** aparece somente quando há conteúdo; Desfazer/Refazer preserva o conjunto.
+- **Whisper em Preferências:** configure o processamento local e gratuito, com download do modelo ao ativar, progresso e cancelamento. No editor ficam os comandos de uso e um atalho com salvamento e retorno ao projeto.
+- **30 motions para YouTube:** curtir, comentar, seguir, inscrever-se e ativar o sininho, com seis animações por ação, ícones e canal opcional. Catálogo total de 52 motions e 12 aparências.
+- **Composição livre:** mova e redimensione cada elemento do motion no player ou na miniatura, com cores e fontes editáveis.
+- **Timeline compacta:** controles por ícones e tooltips, clique preciso na posição do take e navegação entre inícios junto ao Play. Clique na webcam do canvas abre suas propriedades.
+- **Play:** aguarda o primeiro bloco audível e as emendas PCM próximas antes de iniciar o relógio, inclusive depois de silêncio inicial e cortes. A espera pode ser cancelada.
+- **Diálogos:** botões de fechar centralizados e foco inicial no nome ao exportar.
+
+Legendas usam os tempos do reconhecimento e exigem revisão; frases longas não têm alinhamento palavra a palavra. Projetos e originais são preservados. O modelo local é baixado ao ativar, sem envio de áudio por esse fluxo. Windows mantém instalação/atualização manuais e não possui Authenticode próprio.
+
+## Histórico preservado — novidades da 0.9.54
 
 - **Webcam e imagens:** corrige arrastar e redimensionar no canvas, inclusive com o player destacado.
 - **Transcrição mais simples:** motor Whisper CPU integrado ao aplicativo; botão **Baixar e ativar**, com progresso e cancelamento, seguido de **Transcrever**. Não exige executável externo nem chave de API.
