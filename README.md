@@ -1,16 +1,30 @@
 # Dante Studio
 
-Gravador e editor de tutoriais. Versão atual: **0.9.55 para Mac e Windows**.
+Gravador e editor de tutoriais. Versão atual: **0.9.56 para Mac e Windows**.
 Desde a 0.9.45, o uso requer uma **licença válida da plataforma escolhida**,
 ativada dentro do aplicativo.
 
 ## Downloads
 
-- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.55/Dante-Studio-0.9.55-macOS-universal.dmg): assinado e notarizado pela Apple.
-- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.55/Dante-Studio-0.9.55-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
+- [Mac universal — Intel e Apple Silicon, macOS 13+](https://github.com/dantetesta/DanteStudioUpdates/releases/download/macos-universal-v0.9.56/Dante-Studio-0.9.56-macOS-universal.dmg): assinado e notarizado pela Apple.
+- [Windows x64](https://github.com/dantetesta/DanteStudioUpdates/releases/download/windows-x64-v0.9.56/Dante-Studio-0.9.56-Windows-x64-setup.exe): Windows 10 build 19041+ / Windows 11, instalação e atualização manual.
 - Academy: [Windows](https://academy.dantetesta.com.br/download/dante-studio-windows) · [macOS](https://academy.dantetesta.com.br/download/dante-studio-macos).
 
-## Novidades da 0.9.55
+## Novidades da 0.9.56
+
+- **Karaokê por palavra:** destaque a palavra falada com tempos reais do Whisper local, no player e no vídeo exportado. A cor do destaque é editável.
+- **Legendas editáveis:** corrija o texto e aplique estilos depois de gerar. Fonte, cores, fundo, contorno e sombra continuam disponíveis. Texto e tempos próprios de cada legenda são preservados ao mudar o estilo.
+- **Posição em conjunto ou isolada:** as legendas nascem na mesma posição. Aplique ajustes ao conjunto ou desative essa opção para editar somente o trecho escolhido.
+- **Webcam em lote:** mova e ajuste tamanho, modo e formato nos takes de câmera selecionados, com uma ação de Desfazer.
+- **Volume em lote:** aplique o volume aos clipes de áudio selecionados na mesma faixa, incluindo música/narração e áudio de vídeos importados.
+- **Motion Studio:** 30 motions YouTube renovados, com seis animações por ação, marca oficial, lista de camadas e controles próprios de fonte, cor, preenchimento, borda e cantos. Seleção e alças de redimensionamento revisadas.
+- **Busca da transcrição:** resultados visíveis no painel e busca sem diferenciar maiúsculas e acentos.
+
+Karaokê exige tempos por palavra: refaça transcrições antigas ou importadas por SRT para usar esse modo. Corrigir mantendo a quantidade de palavras conserva o alinhamento; acrescentar/remover palavras exige reconhecer novamente o trecho. Revise palavras e tempos do reconhecimento. O fluxo Whisper é local, com modelo baixado somente ao ativar; áudio não é enviado por esse fluxo. Windows mantém instalação/atualização manuais e não possui Authenticode próprio.
+
+- **Ajuda dos controles:** dicas após três segundos contínuos de mouse, painéis opacos e legíveis nos dois temas, tamanho limitado à janela e comportamento compartilhado com o player destacado.
+
+## Histórico preservado — novidades da 0.9.55
 
 - **Legendas automáticas no vídeo:** gere a partir da narração, corrija palavras e personalize fonte, cores, fundo, contorno e sombra. A trilha **Legendas** aparece somente quando há conteúdo; Desfazer/Refazer preserva o conjunto.
 - **Whisper em Preferências:** configure o processamento local e gratuito, com download do modelo ao ativar, progresso e cancelamento. No editor ficam os comandos de uso e um atalho com salvamento e retorno ao projeto.
